@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+    .myname {
+        display: none;
+    }
+
+    /* NAVBAR STYLING USINGB DISPLAY FLEX */
+    nav {
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        height: 66px;
+        background-color: blueviolet;
+        color: white;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+
+        cursor: pointer;
+    }
+
+    nav ul li {
+        padding: 21px;
+        letter-spacing: 1px;
+    }
+
+    nav ul li:hover {
+        background-color: rgb(101, 20, 176);
+        text-decoration: underline;
+    }
+
+
+    /* GAME STYLING  PLAY AREA */
+
+    .welcome {
+        margin-top: 20px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .main-container {
+
+        display: flex;
+    }
+
+    .play-area {
+        margin: 50px;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: repeat(3, 10vw);
+        grid-template-rows: repeat(3, 10vw);
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .box {
+        border: 2px solid black;
+        font-size: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box:hover {
+        background-color: aliceblue;
+    }
+
+    .turn {
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: 30px;
+        width: 160px;
+
+    }
+
+    /* SOME CLASSES FOR REMOVING  BORDERS */
+    .br-t {
+        border-top: none;
+    }
+
+    .br-r {
+        border-right: none;
+    }
+
+    .br-l {
+        border-left: none;
+    }
+
+    .br-b {
+        border-bottom: none;
+    }
+
+
+    /* INFORMATION  AREA STYLING*/
+
+    .info-area {
+        margin: 30px 50px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .imgbox img {
+        width: 0;
+        transition: width 1s ease-in-out;
+    }
+
+    #reset {
+
+
+        padding: 20px 40px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+/* and (min-width: 300px) */
+@media screen and (max-width: 799px) {
+    .myname {
+        display: block;
+        margin: auto;
+
+    }
+
+    .welcome {
+        margin-top: 20px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    nav {
+        background-color: blueviolet;
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        height: 66px;
+        color: white;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+
+    nav ul {
+
+        display: flex;
+        list-style-type: none;
+
+        cursor: pointer;
+    }
+
+    .main-container {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .play-area {
+        margin: 60px auto;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: repeat(3, 10vw);
+        grid-template-rows: repeat(3, 10vw);
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .box {
+        border: 2px solid black;
+        font-size: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box:hover {
+        background-color: aliceblue;
+    }
+
+    .turn {
+        margin-top: 40px;
+        font-weight: bold;
+        font-size: 30px;
+        width: 160px;
+
+    }
+
+    /* SOME CLASSES FOR REMOVING  BORDERS */
+    .br-t {
+        border-top: none;
+    }
+
+    .br-r {
+        border-right: none;
+    }
+
+    .br-l {
+        border-left: none;
+    }
+
+    .br-b {
+        border-bottom: none;
+    }
+
+    /* INFORMATION  AREA STYLING*/
+
+    .info-area {
+        margin: 40px auto;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .imgbox img {
+        margin-top: 30px;
+        width: 0;
+        transition: width 1s ease-in-out;
+    }
+
+    #reset {
+
+
+        padding: 20px 40px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+}
